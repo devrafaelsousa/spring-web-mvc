@@ -13,16 +13,17 @@ public class JediRepository {
 
     public JediRepository() {
         jedi = new ArrayList<>();
-        jedi.add(new Jedi("Luke", "Skywalker"));
-        jedi.add(new Jedi("Obi-Wan", "Kenobi"));
-        jedi.add(new Jedi("Qui-Gon", "Jinn"));
+//        jedi.add(new Jedi("Luke", "Skywalker"));
+//        jedi.add(new Jedi("Obi-Wan", "Kenobi"));
+//        jedi.add(new Jedi("Qui-Gon", "Jinn"));
     }
 
 
     public List<Jedi> getAllJedi() { return this.jedi; }
 
-    public void add(final Jedi jedi) {
+    public Jedi add(final Jedi jedi) {
         this.jedi.add(jedi);
+        return jedi;
     }
 
     public List<Jedi> findAll() {

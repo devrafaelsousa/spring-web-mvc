@@ -18,7 +18,7 @@ public class JediController {
 
     @Autowired
     private JediRepository repository;
-//    private Jedi jedi;
+    private Jedi jedi;
 
     @GetMapping("/jedi")
     public ModelAndView jedi() {
